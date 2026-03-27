@@ -1,197 +1,358 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Traslados desde Aeropuerto Tenerife Sur | TaxiAir">
-    <section class="relative min-h-[80vh] flex items-center bg-slate-900 text-white overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img 
-                src="https://images.unsplash.com/photo-1635178082660-c8ab2b003543?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=2000" 
-                alt="Costa de Tenerife con el Teide al fondo" 
-                class="w-full h-full object-cover opacity-50"
-            />
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-700/200 to-transparent"></div>
+  <section
+    class="relative min-h-[80vh] flex items-center bg-slate-900 text-white overflow-hidden"
+  >
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1635178082660-c8ab2b003543?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=2000"
+        alt="Costa de Tenerife con el Teide al fondo"
+        class="w-full h-full object-cover opacity-50"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-700/200 to-transparent"
+      >
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl">
+        <span
+          class="inline-block bg-yellow-400 text-blue-900 px-4 py-1 rounded-full font-bold text-sm mb-6 uppercase tracking-widest"
+        >
+          Servicio Oficial 24/7
+        </span>
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+          Tu taxi oficial del <span class="text-yellow-400">aeropuerto</span> a tu
+          hotel.
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-100 mb-10 max-w-xl">
+          Precios cerrados desde Aeropuerto Tenerife Sur (TFS). Confort y
+          seguridad canaria en cada trayecto.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a
+            href="/BookingForm"
+            class="bg-yellow-400 text-blue-950 px-10 py-5 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-all hover:-translate-y-1 shadow-lg focus:ring-4 focus:ring-yellow-200 focus:outline-none"
+          >
+            Reservar traslado
+          </a>
+          <a
+            href="/gestion"
+            class="bg-white/10 backdrop-blur-md border-2 border-white/30 px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/20 transition-all focus:ring-4 focus:ring-blue-400"
+          >
+            Ver mi reserva
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="max-w-3xl">
-                <span class="inline-block bg-yellow-400 text-blue-900 px-4 py-1 rounded-full font-bold text-sm mb-6 uppercase tracking-widest">
-                    Servicio Oficial 24/7
-                </span>
-                <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
-                    Tu taxi oficial del <span class="text-yellow-400">aeropuerto</span> a tu hotel.
-                </h1>
-                <p class="text-xl md:text-2xl text-slate-100 mb-10 max-w-xl">
-                    Precios cerrados desde Aeropuerto Tenerife Sur (TFS). Confort y seguridad canaria en cada trayecto.
-                </p>
-                
-                <div class="flex flex-wrap gap-4">
-                    <a href="/reservar" class="bg-yellow-400 text-blue-950 px-10 py-5 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-all hover:-translate-y-1 shadow-lg focus:ring-4 focus:ring-yellow-200 focus:outline-none">
-                        Reservar traslado
-                    </a>
-                    <a href="/gestion" class="bg-white/10 backdrop-blur-md border-2 border-white/30 px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/20 transition-all focus:ring-4 focus:ring-blue-400">
-                        Ver mi reserva
-                    </a>
-                </div>
-            </div>
+  <section class="py-16 bg-white border-b border-slate-100">
+    <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div class="flex items-start gap-4 p-6 rounded-2xl bg-blue-50">
+        <span class="text-4xl" aria-hidden="true">⏱️</span>
+        <div>
+          <h2 class="text-xl font-bold text-blue-900">
+            Puntualidad Certificada
+          </h2>
+          <p class="text-slate-600">
+            Monitorizamos tu vuelo. Si se retrasa, te esperamos sin coste extra.
+          </p>
         </div>
-    </section>
-
-    <section class="py-16 bg-white border-b border-slate-100">
-        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
-            <div class="flex items-start gap-4 p-6 rounded-2xl bg-blue-50">
-                <span class="text-4xl" aria-hidden="true">⏱️</span>
-                <div>
-                    <h2 class="text-xl font-bold text-blue-900">Puntualidad Certificada</h2>
-                    <p class="text-slate-600">Monitorizamos tu vuelo. Si se retrasa, te esperamos sin coste extra.</p>
-                </div>
-            </div>
-            <div class="flex items-start gap-4 p-6 rounded-2xl bg-yellow-50">
-                <span class="text-4xl" aria-hidden="true">💰</span>
-                <div>
-                    <h2 class="text-xl font-bold text-blue-900">Precio Fijo Canario</h2>
-                    <p class="text-slate-600">El precio que ves es el que pagas. Sin taxímetros sorpresa.</p>
-                </div>
-            </div>
-            <div class="flex items-start gap-4 p-6 rounded-2xl bg-blue-50">
-                <span class="text-4xl" aria-hidden="true">🛡️</span>
-                <div>
-                    <h2 class="text-xl font-bold text-blue-900">Seguridad Total</h2>
-                    <p class="text-slate-600">Vehículos de alta gama y conductores locales profesionales.</p>
-                </div>
-            </div>
+      </div>
+      <div class="flex items-start gap-4 p-6 rounded-2xl bg-yellow-50">
+        <span class="text-4xl" aria-hidden="true">💰</span>
+        <div>
+          <h2 class="text-xl font-bold text-blue-900">Precio Fijo Canario</h2>
+          <p class="text-slate-600">
+            El precio que ves es el que pagas. Sin taxímetros sorpresa.
+          </p>
         </div>
-    </section>
-
-    <section class="py-24 bg-slate-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-blue-900 mb-4">Destinos más Populares</h2>
-                <p class="text-lg text-slate-600">Explora la isla desde el momento en que aterrizas.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
-                <div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-3xl bg-blue-900 shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1662492048065-a96f68506a5d?q=80&w=626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=1000" alt="Costa Adeje" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70" />
-                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900 via-transparent to-transparent"></div>
-                    <div class="absolute bottom-0 p-8">
-                        <h3 class="text-3xl font-bold text-white mb-2">Costa Adeje</h3>
-                        <p class="text-white/0 group-hover:text-white/100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                            Playas exclusivas y resorts de lujo. <br> <strong>Desde 25€</strong>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="md:col-span-2 group relative overflow-hidden rounded-3xl bg-blue-800 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1749387920046-243fe41dd374?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=1000" alt="Los Cristianos" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform opacity-70" />
-                    <div class="absolute bottom-0 p-6">
-                        <h3 class="text-2xl font-bold text-white">Los Cristianos</h3>
-                        <span class="text-yellow-400 font-bold">Desde 20€</span>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-3xl bg-blue-800 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1695218994426-089131e9fb97?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=1000" alt="Puerto de la Cruz" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform opacity-70" />
-                    <div class="absolute bottom-0 p-6">
-                        <h4 class="text-xl font-bold text-white">Puerto de la Cruz</h4>
-                        <p class="text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity">El corazón del norte. Desde 90€</p>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-3xl bg-blue-800 shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1551341900-ee1c29a24544?q=80&w=1526&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?q=80&w=1000" alt="Parque Nacional del Teide" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform opacity-70" />
-                    <div class="absolute bottom-0 p-6">
-                        <h4 class="text-xl font-bold text-white">Pico del Teide</h4>
-                        <p class="text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity">Traslados a excursiones. Consultar precio.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="flex items-start gap-4 p-6 rounded-2xl bg-blue-50">
+        <span class="text-4xl" aria-hidden="true">🛡️</span>
+        <div>
+          <h2 class="text-xl font-bold text-blue-900">Seguridad Total</h2>
+          <p class="text-slate-600">
+            Vehículos de alta gama y conductores locales profesionales.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="py-24 bg-white overflow-hidden" aria-labelledby="flota-title">
-        <div class="container mx-auto px-4">
-            <h2 id="flota-title" class="text-3xl font-bold text-center mb-12">Nuestra Flota Sostenible</h2>
-            <div class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
-                <div class="snap-center shrink-0 w-[300px] md:w-[400px] bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=500" alt="Tesla Model 3" class="w-full h-48 object-cover rounded-xl mb-4" />
-                    <h3 class="font-bold text-xl">Eco Premium (100% Eléctrico)</h3>
-                    <p class="text-slate-600">Ideal para 4 personas y 3 maletas.</p>
-                </div>
-                <div class="snap-center shrink-0 w-[300px] md:w-[400px] bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=500" alt="Mercedes Van" class="w-full h-48 object-cover rounded-xl mb-4" />
-                    <h3 class="font-bold text-xl">Van de Grupo</h3>
-                    <p class="text-slate-600">Hasta 8 personas con equipaje deportivo.</p>
-                </div>
-                <div class="snap-center shrink-0 w-[300px] md:w-[400px] bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=500" alt="Taxi Standard" class="w-full h-48 object-cover rounded-xl mb-4" />
-                    <h3 class="font-bold text-xl">Standard Confort</h3>
-                    <p class="text-slate-600">Berlina clásica, económica y eficiente.</p>
-                </div>
-								
-            </div>
+  <section class="py-24 bg-slate-50" aria-labelledby="destinos-title">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 id="destinos-title" class="text-4xl font-black text-blue-900 mb-4">
+          Destinos más Populares
+        </h2>
+        <p class="text-lg text-slate-600">
+          Explora la isla desde el momento en que aterrizas.
+        </p>
+      </div>
+
+      {
+        /* Importante: Usamos grid-cols-1 para móvil y md:grid-cols-4 para escritorio */
+      }
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+        {/* Destino 1: Costa Adeje (Grande) */}
+        <a
+          href="/BookingForm?destino=adeje"
+          class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-3xl bg-blue-900 shadow-xl block focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 transition-all"
+        >
+          <span class="sr-only">Reservar traslado a Costa Adeje</span>
+          <img
+            src="https://images.unsplash.com/photo-1662492048065-a96f68506a5d?q=80&w=626&auto=format&fit=crop"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 group-focus:scale-110 opacity-70"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-blue-900 via-transparent to-transparent"
+          >
+          </div>
+          <div class="absolute bottom-0 p-8">
+            <h3 class="text-3xl font-bold text-white mb-2">Costa Adeje</h3>
+            {/* El texto aparece tanto en hover como en focus */}
+            <p
+              class="text-white opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 group-focus:translate-y-0"
+            >
+              Playas exclusivas y resorts de lujo. <br />
+              <strong>Desde 25€</strong>
+            </p>
+          </div>
+        </a>
+
+        {/* Destino 2: Los Cristianos */}
+        <a
+          href="/BookingForm?destino=cristianos"
+          class="md:col-span-2 group relative overflow-hidden rounded-3xl bg-blue-800 shadow-lg block focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 transition-all"
+        >
+          <span class="sr-only">Reservar traslado a Los Cristianos</span>
+          <img
+            src="https://images.unsplash.com/photo-1749387920046-243fe41dd374?q=80&w=1632&auto=format&fit=crop"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-focus:scale-110 transition-transform opacity-70"
+          />
+          <div class="absolute bottom-0 p-6">
+            <h3 class="text-2xl font-bold text-white">Los Cristianos</h3>
+            <span class="text-yellow-400 font-bold">Desde 20€</span>
+          </div>
+        </a>
+
+        {/* Destino 3: Puerto de la Cruz */}
+        <a
+          href="/BookingForm?destino=puerto"
+          class="group relative overflow-hidden rounded-3xl bg-blue-800 shadow-lg block focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 transition-all"
+        >
+          <span class="sr-only">Reservar traslado a Puerto de la Cruz</span>
+          <img
+            src="https://images.unsplash.com/photo-1695218994426-089131e9fb97?q=80&w=1074&auto=format&fit=crop"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-focus:scale-110 transition-transform opacity-70"
+          />
+          <div class="absolute bottom-0 p-6">
+            <h3 class="text-xl font-bold text-white">Puerto de la Cruz</h3>
+            <p
+              class="text-xs text-white opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity"
+            >
+              El corazón del norte. Desde 90€
+            </p>
+          </div>
+        </a>
+
+        {/* Destino 4: Teide */}
+        <a
+          href="/BookingForm?destino=teide"
+          class="group relative overflow-hidden rounded-3xl bg-blue-800 shadow-lg block focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 transition-all"
+        >
+          <span class="sr-only">Consultar traslado al Pico del Teide</span>
+          <img
+            src="https://images.unsplash.com/photo-1551341900-ee1c29a24544?q=80&w=1526&auto=format&fit=crop"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-focus:scale-110 transition-transform opacity-70"
+          />
+          <div class="absolute bottom-0 p-6">
+            <h3 class="text-xl font-bold text-white">Pico del Teide</h3>
+            <p
+              class="text-xs text-white opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity"
+            >
+              Traslados a excursiones. Consultar precio.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white overflow-hidden" aria-labelledby="flota-title">
+    <div class="container mx-auto px-4">
+      <h2 id="flota-title" class="text-3xl font-bold text-center mb-12">
+        Nuestra Flota Sostenible
+      </h2>
+
+      <div
+        role="list"
+        class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide focus:outline-none"
+      >
+        {/* Tarjeta 1 */}
+        <a
+          href="/BookingForm?vehiculo=eco"
+          role="listitem"
+          class="snap-center shrink-0 w-[300px] md:w-[400px] bg-slate-50 rounded-2xl p-6 border border-slate-200 block transition-all hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 group"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=500"
+            alt="Tesla Model 3 color blanco"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:opacity-90 transition-opacity"
+          />
+          <h3 class="font-bold text-xl text-blue-900">
+            Eco Premium (100% Eléctrico)
+          </h3>
+          <p class="text-slate-600">Ideal para 4 personas y 3 maletas.</p>
+          <span
+            class="inline-block mt-4 text-sm font-bold text-blue-600 group-hover:underline"
+            >Seleccionar este vehículo →</span
+          >
+        </a>
+
+        {/* Tarjeta 2 */}
+        <a
+          href="/BookingForm?vehiculo=van"
+          role="listitem"
+          class="snap-center shrink-0 w-[300px] md:w-[400px] bg-slate-50 rounded-2xl p-6 border border-slate-200 block transition-all hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 group"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=500"
+            alt="Mercedes Benz Clase V negra"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:opacity-90 transition-opacity"
+          />
+          <h3 class="font-bold text-xl text-blue-900">Van de Grupo</h3>
+          <p class="text-slate-600">Hasta 8 personas con equipaje deportivo.</p>
+          <span
+            class="inline-block mt-4 text-sm font-bold text-blue-600 group-hover:underline"
+            >Seleccionar este vehículo →</span
+          >
+        </a>
+
+        {/* Tarjeta 3 */}
+        <a
+          href="/BookingForm?vehiculo=standard"
+          role="listitem"
+          class="snap-center shrink-0 w-[300px] md:w-[400px] bg-slate-50 rounded-2xl p-6 border border-slate-200 block transition-all hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-offset-2 group"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=500"
+            alt="Vehículo berlina standard"
+            class="w-full h-48 object-cover rounded-xl mb-4 group-hover:opacity-90 transition-opacity"
+          />
+          <h3 class="font-bold text-xl text-blue-900">Standard Confort</h3>
+          <p class="text-slate-600">Berlina clásica, económica y eficiente.</p>
+          <span
+            class="inline-block mt-4 text-sm font-bold text-blue-600 group-hover:underline"
+            >Seleccionar este vehículo →</span
+          >
+        </a>
+      </div>
+
+      <p class="text-center text-xs text-slate-400 mt-2 md:hidden">
+        Desliza para ver más vehículos
+      </p>
+    </div>
+  </section>
+
+  <section class="py-24 bg-blue-900 text-white">
+    <div class="container mx-auto px-4">
+      <div
+        class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
+      >
+        <div>
+          <h2 class="text-4xl font-bold mb-2 text-yellow-400">
+            Lo que dicen los viajeros
+          </h2>
+          <div class="flex items-center gap-2">
+            <span class="text-2xl font-bold">4.9/5</span>
+            <span class="text-yellow-400 text-xl" aria-label="5 estrellas"
+              >★★★★★</span
+            >
+            <span class="text-blue-200">en Google Maps</span>
+          </div>
         </div>
-    </section>
+        <button class="bg-white text-blue-900 px-6 py-2 rounded-lg font-bold"
+          >Escribir reseña</button
+        >
+      </div>
 
-    <section class="py-24 bg-blue-900 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-                <div>
-                    <h2 class="text-4xl font-bold mb-2 text-yellow-400">Lo que dicen los viajeros</h2>
-                    <div class="flex items-center gap-2">
-                        <span class="text-2xl font-bold">4.9/5</span>
-                        <span class="text-yellow-400 text-xl" aria-label="5 estrellas">★★★★★</span>
-                        <span class="text-blue-200">en Google Maps</span>
-                    </div>
-                </div>
-                <button class="bg-white text-blue-900 px-6 py-2 rounded-lg font-bold">Escribir reseña</button>
+      <div class="grid md:grid-cols-3 gap-8">
+        <blockquote class="bg-blue-800 p-8 rounded-2xl relative shadow-lg">
+          <p class="italic mb-6 text-blue-50">
+            "Increíble servicio. Nos esperaban en el aeropuerto con un cartel.
+            El conductor fue súper amable y nos dio recomendaciones de
+            guachinches."
+          </p>
+          <cite class="not-italic flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center font-bold"
+            >
+              M
             </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <blockquote class="bg-blue-800 p-8 rounded-2xl relative shadow-lg">
-                    <p class="italic mb-6 text-blue-50">"Increíble servicio. Nos esperaban en el aeropuerto con un cartel. El conductor fue súper amable y nos dio recomendaciones de guachinches."</p>
-                    <cite class="not-italic flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center font-bold">M</div>
-                        <div>
-                            <span class="block font-bold">Marcos Rodríguez</span>
-                            <span class="text-xs text-blue-300">Hace 2 días</span>
-                        </div>
-                    </cite>
-                </blockquote>
-                <blockquote class="bg-blue-800 p-8 rounded-2xl relative shadow-lg">
-                    <p class="italic mb-6 text-blue-50">"Muy fácil de reservar. Me enviaron el código por email y el precio fue exactamente el que me dijeron en la web."</p>
-                    <cite class="not-italic flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center font-bold">S</div>
-                        <div>
-                            <span class="block font-bold">Sarah Jenkins</span>
-                            <span class="text-xs text-blue-300">Hace 1 semana</span>
-                        </div>
-                    </cite>
-                </blockquote>
-                <blockquote class="bg-blue-800 p-8 rounded-2xl relative shadow-lg">
-                    <p class="italic mb-6 text-blue-50">"Perfecto para familias. Tenían la silla de bebé preparada tal como pedí en el formulario."</p>
-                    <cite class="not-italic flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center font-bold">C</div>
-                        <div>
-                            <span class="block font-bold">Carla Soto</span>
-                            <span class="text-xs text-blue-300">Hace 3 días</span>
-                        </div>
-                    </cite>
-                </blockquote>
+            <div>
+              <span class="block font-bold">Marcos Rodríguez</span>
+              <span class="text-xs text-blue-300">Hace 2 días</span>
             </div>
-        </div>
-    </section>
-
-    
+          </cite>
+        </blockquote>
+        <blockquote class="bg-blue-800 p-8 rounded-2xl relative shadow-lg">
+          <p class="italic mb-6 text-blue-50">
+            "Muy fácil de reservar. Me enviaron el código por email y el precio
+            fue exactamente el que me dijeron en la web."
+          </p>
+          <cite class="not-italic flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center font-bold"
+            >
+              S
+            </div>
+            <div>
+              <span class="block font-bold">Sarah Jenkins</span>
+              <span class="text-xs text-blue-300">Hace 1 semana</span>
+            </div>
+          </cite>
+        </blockquote>
+        <blockquote class="bg-blue-800 p-8 rounded-2xl relative shadow-lg">
+          <p class="italic mb-6 text-blue-50">
+            "Perfecto para familias. Tenían la silla de bebé preparada tal como
+            pedí en el formulario."
+          </p>
+          <cite class="not-italic flex items-center gap-4">
+            <div
+              class="w-10 h-10 rounded-full bg-yellow-400 text-blue-900 flex items-center justify-center font-bold"
+            >
+              C
+            </div>
+            <div>
+              <span class="block font-bold">Carla Soto</span>
+              <span class="text-xs text-blue-300">Hace 3 días</span>
+            </div>
+          </cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style>
-    /* Estilo para ocultar scrollbar en carrusel */
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-    }
-    .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
+  /* Estilo para ocultar scrollbar en carrusel */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 </style>
