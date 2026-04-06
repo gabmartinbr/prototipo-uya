@@ -1,11 +1,12 @@
 ---
 import "../styles/global.css";
+
 interface Props {
   title: string;
 }
 const { title } = Astro.props;
 
-// Obtenemos la ruta actual para el estado "active"
+// ruta actual para el estado "active"
 const pathname = new URL(Astro.url).pathname;
 ---
 
@@ -107,25 +108,29 @@ const pathname = new URL(Astro.url).pathname;
               <a
                 href="/"
                 class="block px-4 py-3 rounded-xl font-medium hover:bg-blue-50 hover:text-blue-700"
-                >Inicio</a>
+                >Inicio</a
+              >
             </li>
             <li>
               <a
                 href="/BookingForm"
                 class="block px-4 py-3 rounded-xl font-medium hover:bg-blue-50 hover:text-blue-700"
-                >Reservar</a>
+                >Reservar</a
+              >
             </li>
             <li>
               <a
                 href="/ManageBooking"
                 class="block px-4 py-3 rounded-xl font-medium hover:bg-blue-50 hover:text-blue-700"
-                >Mis Reservas</a>
+                >Mis Reservas</a
+              >
             </li>
             <li>
               <a
                 href="/ContactForm"
                 class="block px-4 py-3 mt-2 bg-yellow-400 text-blue-900 text-center rounded-xl font-bold"
-                >Contacto</a>
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
@@ -179,25 +184,29 @@ const pathname = new URL(Astro.url).pathname;
                 <a
                   href="/BookingForm"
                   class="hover:text-yellow-400 transition-colors flex items-center gap-2"
-                  ><span>→</span> Reservar Taxi</a>
+                  ><span>→</span> Reservar Taxi</a
+                >
               </li>
               <li>
                 <a
                   href="/ManageBooking"
                   class="hover:text-yellow-400 transition-colors flex items-center gap-2"
-                  ><span>→</span> Mis Reservas</a>
+                  ><span>→</span> Mis Reservas</a
+                >
               </li>
               <li>
                 <a
                   href="/ContactForm"
                   class="hover:text-yellow-400 transition-colors flex items-center gap-2"
-                  ><span>→</span> Soporte 24h</a>
+                  ><span>→</span> Soporte 24h</a
+                >
               </li>
               <li>
                 <a
                   href="#"
                   class="hover:text-yellow-400 transition-colors flex items-center gap-2"
-                  ><span>→</span> Tarifas 2026</a>
+                  ><span>→</span> Tarifas 2026</a
+                >
               </li>
             </ul>
           </div>
@@ -211,17 +220,19 @@ const pathname = new URL(Astro.url).pathname;
             <ul class="space-y-4 text-sm">
               <li>
                 <a href="#" class="hover:text-slate-200 transition-colors"
-                  >Aviso Legal</a>
+                  >Aviso Legal</a
+                >
               </li>
               <li>
                 <a href="#" class="hover:text-slate-200 transition-colors"
-                  >Política de Privacidad</a>
+                  >Política de Privacidad</a
+                >
               </li>
               <li>
                 <a href="#" class="hover:text-slate-200 transition-colors"
-                  >Uso de Cookies</a>
+                  >Uso de Cookies</a
+                >
               </li>
-              
             </ul>
           </div>
 
@@ -304,7 +315,7 @@ const pathname = new URL(Astro.url).pathname;
       // Ejecución inicial
       initNavigation();
 
-      // Si usas View Transitions de Astro, esto asegura que funcione al navegar
+      // View Transitions de Astro, esto asegura que funcione al navegar
       document.addEventListener("astro:after-swap", initNavigation);
     </script>
   </body>

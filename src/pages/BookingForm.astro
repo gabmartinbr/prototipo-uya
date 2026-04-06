@@ -3,141 +3,277 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Reservar Traslado Oficial | Taxirife">
-  <section class="relative min-h-screen py-12 flex items-center justify-center bg-slate-900">
+  <section
+    class="relative min-h-screen py-12 flex items-center justify-center bg-slate-900"
+  >
     <div class="absolute inset-0 z-0">
-      <img 
-        src="https://plus.unsplash.com/premium_photo-1700566982560-31ed8b46991a?q=80&w=2000&auto=format&fit=crop" 
+      <img
+        src="https://plus.unsplash.com/premium_photo-1700566982560-31ed8b46991a?q=80&w=2000&auto=format&fit=crop"
         class="w-full h-full object-cover opacity-40"
         alt="Tenerife Coast"
       />
-      <div class="absolute inset-0 bg-gradient-to-b from-blue-900/30 via-slate-900/50 to-slate-900"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-blue-900/30 via-slate-900/50 to-slate-900"
+      >
+      </div>
     </div>
 
     <div class="container mx-auto px-4 z-10">
       <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
-        
         <div class="lg:col-span-5 text-white space-y-8">
           <div>
-            <span class="bg-yellow-400 text-blue-900 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Oficial Taxi Tenerife</span>
+            <span
+              class="bg-yellow-400 text-blue-900 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest"
+              >Oficial Taxi Tenerife</span
+            >
             <h1 class="text-5xl md:text-6xl font-black mt-4 leading-tight">
-              Tu viaje <span class="text-yellow-400">sin sorpresas</span> empieza aquí.
+              Tu viaje <span class="text-yellow-400">sin sorpresas</span> empieza
+              aquí.
             </h1>
             <p class="text-lg text-slate-300 mt-6 leading-relaxed">
-              Reservas directas con conductores certificados. Precios cerrados y pago seguro en el vehículo.
+              Reservas directas con conductores certificados. Precios cerrados y
+              pago seguro en el vehículo.
             </p>
           </div>
 
           <div class="grid grid-cols-2 gap-6 italic text-sm">
             <div class="flex items-center gap-3 text-green-400 font-bold">
-              <span class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-xs">✓</span>
+              <span
+                class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-xs"
+                >✓</span
+              >
               <span class="text-white">Cancelación Gratis</span>
             </div>
             <div class="flex items-center gap-3 text-green-400 font-bold">
-              <span class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-xs">✓</span>
+              <span
+                class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-xs"
+                >✓</span
+              >
               <span class="text-white">Silla bebé gratis</span>
             </div>
           </div>
         </div>
 
         <div class="lg:col-span-7">
-          <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-white/20">
-            
-            <div class="bg-blue-700 p-6 text-white flex justify-between items-center border-b border-blue-800">
+          <div
+            class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-white/20"
+          >
+            <div
+              class="bg-blue-700 p-6 text-white flex justify-between items-center border-b border-blue-800"
+            >
               <div>
-                <h2 class="text-2xl font-black italic tracking-tight uppercase">Solicitud de Reserva</h2>
-                <p class="text-blue-200 text-[10px] uppercase tracking-widest font-bold">Reserva ahora, paga al llegar</p>
+                <h2 class="text-2xl font-black italic tracking-tight uppercase">
+                  Solicitud de Reserva
+                </h2>
+                <p
+                  class="text-blue-200 text-[10px] uppercase tracking-widest font-bold"
+                >
+                  Reserva ahora, paga al llegar
+                </p>
               </div>
-              <div class="hidden sm:flex items-center gap-2 bg-blue-900/50 px-3 py-2 rounded-xl border border-white/10">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+              <div
+                class="hidden sm:flex items-center gap-2 bg-blue-900/50 px-3 py-2 rounded-xl border border-white/10"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 text-green-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                    clip-rule="evenodd"></path>
                 </svg>
-                <span class="text-[9px] font-black uppercase tracking-tighter">Conexión Segura</span>
+                <span class="text-[9px] font-black uppercase tracking-tighter"
+                  >Conexión Segura</span
+                >
               </div>
             </div>
 
             <form id="booking-form" class="p-8 space-y-7">
               <fieldset class="space-y-3">
-                <legend class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2 mb-2">
-                    <span class="w-5 h-5 bg-blue-600 text-white rounded-md flex items-center justify-center text-[10px]">1</span>
-                    Aeropuerto de Origen
+                <legend
+                  class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2 mb-2"
+                >
+                  <span
+                    class="w-5 h-5 bg-blue-600 text-white rounded-md flex items-center justify-center text-[10px]"
+                    >1</span
+                  >
+                  Aeropuerto de Origen
                 </legend>
                 <div class="grid grid-cols-2 gap-4">
-                  <label class="relative cursor-pointer group focus-within:ring-4 focus-within:ring-blue-100 rounded-2xl">
-                    <input type="radio" name="airport" value="sur" checked class="sr-only peer" />
-                    <div class="p-4 border-2 border-slate-100 rounded-2xl bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-all text-center">
-                      <p class="font-bold text-slate-700 text-sm italic">SUR (TFS)</p>
+                  <label
+                    class="relative cursor-pointer group focus-within:ring-4 focus-within:ring-blue-100 rounded-2xl"
+                  >
+                    <input
+                      type="radio"
+                      name="airport"
+                      value="sur"
+                      checked
+                      class="sr-only peer"
+                    />
+                    <div
+                      class="p-4 border-2 border-slate-100 rounded-2xl bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-all text-center"
+                    >
+                      <p class="font-bold text-slate-700 text-sm italic">
+                        SUR (TFS)
+                      </p>
                     </div>
                   </label>
-                  <label class="relative cursor-pointer group focus-within:ring-4 focus-within:ring-blue-100 rounded-2xl">
-                    <input type="radio" name="airport" value="norte" class="sr-only peer" />
-                    <div class="p-4 border-2 border-slate-100 rounded-2xl bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-all text-center">
-                      <p class="font-bold text-slate-700 text-sm italic">NORTE (TFN)</p>
+                  <label
+                    class="relative cursor-pointer group focus-within:ring-4 focus-within:ring-blue-100 rounded-2xl"
+                  >
+                    <input
+                      type="radio"
+                      name="airport"
+                      value="norte"
+                      class="sr-only peer"
+                    />
+                    <div
+                      class="p-4 border-2 border-slate-100 rounded-2xl bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-all text-center"
+                    >
+                      <p class="font-bold text-slate-700 text-sm italic">
+                        NORTE (TFN)
+                      </p>
                     </div>
                   </label>
                 </div>
               </fieldset>
 
               <div class="space-y-3">
-                <label for="dest-select" class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2">
-                    <span class="w-5 h-5 bg-blue-600 text-white rounded-md flex items-center justify-center text-[10px]">2</span>
-                    Punto de Destino
+                <label
+                  for="dest-select"
+                  class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2"
+                >
+                  <span
+                    class="w-5 h-5 bg-blue-600 text-white rounded-md flex items-center justify-center text-[10px]"
+                    >2</span
+                  >
+                  Punto de Destino
                 </label>
                 <div class="relative">
-                    <select id="dest-select" class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-600 focus:ring-4 focus:ring-blue-100 outline-none appearance-none cursor-pointer font-bold text-slate-800"></select>
-                    <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-blue-600">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </div>
+                  <select
+                    id="dest-select"
+                    class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-600 focus:ring-4 focus:ring-blue-100 outline-none appearance-none cursor-pointer font-bold text-slate-800"
+                  ></select>
+                  <div
+                    class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-blue-600"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
                 </div>
               </div>
 
               <fieldset class="space-y-3">
-                <legend class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2 mb-2">
-                    <span class="w-5 h-5 bg-blue-600 text-white rounded-md flex items-center justify-center text-[10px]">3</span>
-                    Vehículo Preferido
+                <legend
+                  class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] flex items-center gap-2 mb-2"
+                >
+                  <span
+                    class="w-5 h-5 bg-blue-600 text-white rounded-md flex items-center justify-center text-[10px]"
+                    >3</span
+                  >
+                  Vehículo Preferido
                 </legend>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                  {['standard', 'minivan', 'premium'].map((type) => (
-                    <label class="relative cursor-pointer group focus-within:ring-4 focus-within:ring-blue-100 rounded-xl">
-                      <input type="radio" name="vehicle" value={type} checked={type === 'standard'} class="sr-only peer" />
-                      <div class="p-3 border-2 border-slate-100 rounded-xl bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-all text-center">
-                        <p class="font-bold text-xs capitalize">{type}</p>
-                      </div>
-                    </label>
-                  ))}
+                  {
+                    ["standard", "minivan", "premium"].map((type) => (
+                      <label class="relative cursor-pointer group focus-within:ring-4 focus-within:ring-blue-100 rounded-xl">
+                        <input
+                          type="radio"
+                          name="vehicle"
+                          value={type}
+                          checked={type === "standard"}
+                          class="sr-only peer"
+                        />
+                        <div class="p-3 border-2 border-slate-100 rounded-xl bg-slate-50 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-all text-center">
+                          <p class="font-bold text-xs capitalize">{type}</p>
+                        </div>
+                      </label>
+                    ))
+                  }
                 </div>
               </fieldset>
 
-              <div class="bg-slate-900 rounded-[2rem] p-7 text-white space-y-6 shadow-xl">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div
+                class="bg-slate-900 rounded-[2rem] p-7 text-white space-y-6 shadow-xl"
+              >
+                <div
+                  class="flex flex-col md:flex-row justify-between items-center gap-4"
+                >
                   <div>
-                    <p class="text-blue-400 text-[10px] font-black uppercase tracking-widest">Precio Final Garantizado</p>
+                    <p
+                      class="text-blue-400 text-[10px] font-black uppercase tracking-widest"
+                    >
+                      Precio Final Garantizado
+                    </p>
                     <div class="flex items-baseline gap-1">
-                      <span id="final-price" class="text-5xl font-black text-yellow-400">0,00</span>
+                      <span
+                        id="final-price"
+                        class="text-5xl font-black text-yellow-400">0,00</span
+                      >
                       <span class="text-xl font-bold text-yellow-400">€</span>
                     </div>
                   </div>
-                  <button type="submit" class="w-full md:w-auto bg-yellow-400 text-blue-900 px-10 py-4 rounded-2xl font-black text-lg hover:bg-yellow-300 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_10px_20px_rgba(234,179,8,0.3)]">
+                  <button
+                    type="submit"
+                    class="w-full md:w-auto bg-yellow-400 text-blue-900 px-10 py-4 rounded-2xl font-black text-lg hover:bg-yellow-300 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_10px_20px_rgba(234,179,8,0.3)]"
+                  >
                     RESERVAR AHORA
                   </button>
                 </div>
 
-                <div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <span class="text-[9px] uppercase font-bold text-slate-400 tracking-tighter italic text-center sm:text-left">Aceptamos pago directo en el taxi:</span>
-                    <div class="flex items-center gap-4 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all flex-wrap justify-center">
-                        <img src="https://api.iconify.design/logos:visa.svg" class="h-3" alt="Visa" />
-                        <img src="https://api.iconify.design/logos:mastercard.svg" class="h-5" alt="Mastercard" />
-                        <img src="https://api.iconify.design/logos:apple-pay.svg" class="h-5" alt="Apple Pay" />
-                        <img src="https://api.iconify.design/logos:google-pay.svg" class="h-5" alt="Google Pay" />
-                        <div class="hidden sm:block h-4 w-[1px] bg-white/20"></div>
-                        <span class="text-[10px] font-black">CASH</span>
-                    </div>
+                <div
+                  class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4"
+                >
+                  <span
+                    class="text-[9px] uppercase font-bold text-slate-400 tracking-tighter italic text-center sm:text-left"
+                    >Aceptamos pago directo en el taxi:</span
+                  >
+                  <div
+                    class="flex items-center gap-4 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all flex-wrap justify-center"
+                  >
+                    <img
+                      src="https://api.iconify.design/logos:visa.svg"
+                      class="h-3"
+                      alt="Visa"
+                    />
+                    <img
+                      src="https://api.iconify.design/logos:mastercard.svg"
+                      class="h-5"
+                      alt="Mastercard"
+                    />
+                    <img
+                      src="https://api.iconify.design/logos:apple-pay.svg"
+                      class="h-5"
+                      alt="Apple Pay"
+                    />
+                    <img
+                      src="https://api.iconify.design/logos:google-pay.svg"
+                      class="h-5"
+                      alt="Google Pay"
+                    />
+                    <div class="hidden sm:block h-4 w-[1px] bg-white/20"></div>
+                    <span class="text-[10px] font-black">CASH</span>
+                  </div>
                 </div>
               </div>
-              
-              <p class="text-center text-[9px] text-slate-400 uppercase font-medium">
-                Reserva sujeta a disponibilidad. Confirmación inmediata vía email.
+
+              <p
+                class="text-center text-[9px] text-slate-400 uppercase font-medium"
+              >
+                Reserva sujeta a disponibilidad. Confirmación inmediata vía
+                email.
               </p>
             </form>
           </div>
@@ -167,19 +303,19 @@ import Layout from "../layouts/Layout.astro";
     sur: [
       { id: "cristianos", name: "Los Cristianos", price: 25 },
       { id: "adeje", name: "Costa Adeje", price: 30 },
-      { id: "puerto", name: "Puerto de la Cruz", price: 110 }
+      { id: "puerto", name: "Puerto de la Cruz", price: 110 },
     ],
     norte: [
       { id: "santacruz", name: "Santa Cruz", price: 20 },
       { id: "lalaguna", name: "La Laguna", price: 15 },
-      { id: "adeje_n", name: "Costa Adeje (Sur)", price: 95 }
-    ]
+      { id: "adeje_n", name: "Costa Adeje (Sur)", price: 95 },
+    ],
   };
 
   const vehicleSupplements = {
     standard: 0,
     minivan: 15,
-    premium: 25
+    premium: 25,
   };
 
   const select = document.getElementById("dest-select") as HTMLSelectElement;
@@ -188,37 +324,44 @@ import Layout from "../layouts/Layout.astro";
   const vehicleRadios = document.querySelectorAll('input[name="vehicle"]');
 
   function updateForm() {
-    const checkedAirport = document.querySelector('input[name="airport"]:checked') as HTMLInputElement;
-    const selectedAirport = checkedAirport?.value || 'sur';
-    
+    const checkedAirport = document.querySelector(
+      'input[name="airport"]:checked',
+    ) as HTMLInputElement;
+    const selectedAirport = checkedAirport?.value || "sur";
+
     const destinations = basePrices[selectedAirport as keyof typeof basePrices];
-    
+
     if (select) {
-        select.innerHTML = "";
-        destinations.forEach(dest => {
-            const option = document.createElement("option");
-            option.value = dest.price.toString();
-            option.textContent = dest.name;
-            select.appendChild(option);
-        });
+      select.innerHTML = "";
+      destinations.forEach((dest) => {
+        const option = document.createElement("option");
+        option.value = dest.price.toString();
+        option.textContent = dest.name;
+        select.appendChild(option);
+      });
     }
     calculateTotal();
   }
 
   function calculateTotal() {
-    const checkedVehicle = document.querySelector('input[name="vehicle"]:checked') as HTMLInputElement;
+    const checkedVehicle = document.querySelector(
+      'input[name="vehicle"]:checked',
+    ) as HTMLInputElement;
     if (!priceDisplay || !select || !checkedVehicle) return;
-    
+
     const basePrice = parseInt(select.value) || 0;
-    const supplement = vehicleSupplements[checkedVehicle.value as keyof typeof vehicleSupplements] || 0;
+    const supplement =
+      vehicleSupplements[
+        checkedVehicle.value as keyof typeof vehicleSupplements
+      ] || 0;
     priceDisplay.textContent = (basePrice + supplement).toString() + ",00";
   }
 
   // Escuchamos cambios
-  airportRadios.forEach(r => r.addEventListener("change", updateForm));
-  vehicleRadios.forEach(r => r.addEventListener("change", calculateTotal));
+  airportRadios.forEach((r) => r.addEventListener("change", updateForm));
+  vehicleRadios.forEach((r) => r.addEventListener("change", calculateTotal));
   select?.addEventListener("change", calculateTotal);
-  
+
   // Iniciamos estado
   updateForm();
 </script>
